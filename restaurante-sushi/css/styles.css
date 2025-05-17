@@ -93,7 +93,8 @@ nav ul li a:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.banner h1, .banner p {
+.banner h1,
+.banner p {
     position: relative;
     z-index: 1;
 }
@@ -206,23 +207,32 @@ footer h3 {
 
 .icones {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .icones a {
-    color: #534f4f; 
-    font-size: 24px; 
+    color: #534f4f;
+    font-size: 24px;
     transition: color 0.3s ease;
 }
 
 .icones a:hover {
-    color: #e74c3c; /* cor ao passar o mouse */
+    color: #e74c3c;
+    /* cor ao passar o mouse */
 }
 
 /* Cores personalizadas para cada rede social */
-.fa-instagram:hover { color: #e1306c; }
-.fa-facebook-f:hover { color: #1877f2; }
-.fa-whatsapp:hover { color: #25d366; }
+.fa-instagram:hover {
+    color: #e1306c;
+}
+
+.fa-facebook-f:hover {
+    color: #1877f2;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -230,16 +240,16 @@ footer h3 {
         flex-direction: column;
         align-items: center;
     }
-    
+
     nav ul li {
         margin: 0.5rem 0;
     }
-    
+
     .sobre-conteudo {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .sobre-conteudo img {
         margin-right: 0;
         margin-bottom: 1.5rem;
@@ -271,7 +281,8 @@ footer h3 {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.banner-interno h1, .banner-interno p {
+.banner-interno h1,
+.banner-interno p {
     position: relative;
     z-index: 1;
 }
@@ -376,7 +387,8 @@ footer h3 {
     gap: 2rem;
 }
 
-.contato-info, .formulario-contato {
+.contato-info,
+.formulario-contato {
     flex: 1;
     min-width: 300px;
 }
@@ -425,7 +437,14 @@ footer h3 {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
+
+
+.prato-info .preco {
+    margin-bottom: 0.9rem;
+}
+
 
 .botao-enviar:hover,
 .botao-reservar:hover,
@@ -572,7 +591,8 @@ footer h3 {
     object-fit: cover;
 }
 
-.ambiente h3, .ambiente p {
+.ambiente h3,
+.ambiente p {
     padding: 0.5rem 1rem;
 }
 
@@ -740,29 +760,30 @@ footer h3 {
     .itens-menu {
         grid-template-columns: 1fr;
     }
-    
+
     .item-cardapio {
         flex-direction: column;
     }
-    
+
     .item-cardapio img {
         width: 100%;
         height: 180px;
     }
-    
+
     .reserva-linha {
         flex-direction: column;
         gap: 0;
     }
-    
+
     .prato-delivery {
         flex-direction: column;
     }
-    
+
     .prato-delivery img {
         width: 100%;
     }
 }
+
 .info-item {
     display: flex;
     align-items: flex-start;
@@ -770,10 +791,13 @@ footer h3 {
 }
 
 .info-item i {
-    font-size: 24px; /* Tamanho do ícone */
-    color: #d62c1f; /* Cor vermelha japonesa tradicional */
+    font-size: 24px;
+    /* Tamanho do ícone */
+    color: #d62c1f;
+    /* Cor vermelha japonesa tradicional */
     margin-right: 15px;
-    width: 30px; /* Largura fixa para alinhamento */
+    width: 30px;
+    /* Largura fixa para alinhamento */
     text-align: center;
 }
 
@@ -789,17 +813,21 @@ footer h3 {
 .info-item p {
     margin: 5px 0;
 }
- .detalhe {
+
+.detalhe {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
 .detalhe i {
-    font-size: 24px; /* tamanho do ícone */
-    color: #d62c1f; /* vermelho japonês tradicional */
+    font-size: 24px;
+    /* tamanho do ícone */
+    color: #d62c1f;
+    /* vermelho japonês tradicional */
     margin-right: 15px;
-    min-width: 30px; /* largura fixa para alinhamento */
+    min-width: 30px;
+    /* largura fixa para alinhamento */
     text-align: center;
 }
 
@@ -807,3 +835,86 @@ footer h3 {
     margin: 0;
     flex: 1;
 }
+
+.info-delivery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-delivery {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-delivery i {
+    color: #e53935;
+    /* ou outra cor que combine com seu site */
+    min-width: 32px;
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info-texto p {
+    margin: 0 0 10px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.link-consulta {
+    color: #e53935;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-consulta:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 600px) {
+    .info-delivery {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-delivery i {
+        margin-bottom: 10px;
+    }
+}
+
+.icon-whatsapp {
+    color: #25D366;
+}
+
+.icon-telefone {
+    color: #EF5350;
+}
+
+.icon-delivery {
+    color: #FFA726;
+}
+
+.icon-moto {
+    color: #E53935;
+}
+
+.icon-burger {
+    color: #E53935;
+}
+
+.icon-bag {
+    color: #E53935;
+}
+
+/* Hover effect opcional */
+.icon-whatsapp:hover { color: #087130; }
+.icon-telefone:hover { color: #e53935; }
+.icon-delivery:hover { color: #FB8C00; }
+.icon-moto:hover, .icon-burger:hover, .icon-bag:hover { color: #dc5d5d; }
