@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - MiauMaki Sushi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.webp" alt="MiauMaki Sushi Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-interno">
+            <h1>Faça sua Reserva</h1>
+            <p>Reserve uma mesa para uma experiência inesquecível</p>
+        </section>
+
+        <section class="reservas-info">
+            <div class="reservas-texto">
+                <h2>Informações para Reservas</h2>
+                <p>Para garantir o melhor atendimento, pedimos que as reservas sejam feitas com pelo menos 24 horas de
+                    antecedência. Para grupos com mais de 8 pessoas, entre em contato diretamente pelo telefone (11)
+                    5555-1234.</p>
+
+                <div class="detalhes-reserva">
+    <div class="detalhe">
+        <i class="far fa-calendar-alt"></i>
+        <p>Reservas disponíveis para qualquer dia da semana</p>
+    </div>
+
+    <div class="detalhe">
+        <i class="fas fa-hourglass-half"></i>
+        <p>Reserva garantida por 15 minutos após o horário marcado</p>
+    </div>
+
+    <div class="detalhe">
+        <i class="fas fa-users"></i>
+        <p>Para grupos maiores (8+ pessoas) entre em contato por telefone</p>
+    </div>
+</div>
+            </div>
+
+            <div class="imagem-ambiente">
+                <img src="img/Ambiente do restaurante.avif" alt="Ambiente do restaurante">
+            </div>
+        </section>
+
+        <section class="formulario-reserva">
+            <h2>Formulário de Reserva</h2>
+            <form>
+                <div class="reserva-linha">
+                    <div class="form-grupo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+
+                <div class="reserva-linha">
+                    <div class="form-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="pessoas">Número de Pessoas</label>
+                        <select id="pessoas" name="pessoas" required>
+                            <option value="">Selecione</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5">5 pessoas</option>
+                            <option value="6">6 pessoas</option>
+                            <option value="7">7 pessoas</option>
+                            <option value="8">8 pessoas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="reserva-linha">
+                    <div class="form-grupo">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="hora">Horário</label>
+                        <select id="hora" name="hora" required>
+                            <option value="">Selecione</option>
+                            <option value="12:00">12:00 (apenas fim de semana)</option>
+                            <option value="13:00">13:00 (apenas fim de semana)</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-grupo full-width">
+                    <label for="observacoes">Observações (opcional)</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"
+                        placeholder="Informe preferências, alergias ou ocasiões especiais"></textarea>
+                </div>
+
+                <div class="politica-reserva">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Li e concordo com a política de reservas do restaurante</label>
+                </div>
+
+                <button type="submit" class="botao-reservar">Confirmar Reserva</button>
+            </form>
+        </section>
+
+        <section class="ambientes">
+            <h2>Nossos Ambientes</h2>
+            <div class="galeria-ambientes">
+                <div class="ambiente">
+                    <img src="imagens/ambientes/salao-principal.jpg" alt="Salão Principal">
+                    <h3>Salão Principal</h3>
+                    <p>Ambiente tradicional com capacidade para até 40 pessoas</p>
+                </div>
+
+                <div class="ambiente">
+                    <img src="imagens/ambientes/tatami.jpg" alt="Sala Tatami">
+                    <h3>Sala Tatami</h3>
+                    <p>Sala reservada com mesas tradicionais japonesas para até 12 pessoas</p>
+                </div>
+
+                <div class="ambiente">
+                    <img src="imagens/ambientes/bar-sushi.jpg" alt="Bar de Sushi">
+                    <h3>Bar de Sushi</h3>
+                    <p>Balcão onde você pode acompanhar de perto o trabalho dos sushimen</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contato-rapido">
+            <h3>Horário de Funcionamento</h3>
+            <p>Segunda a Sexta: 18h - 23h</p>
+            <p>Sábados e Domingos: 12h - 23h</p>
+        </div>
+        <div class="redes-sociais">
+            <h3>Siga-nos</h3>
+            <div class="icones">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p>Rua das Cerejeiras, 123</p>
+            <p>Bairro Liberdade - São Paulo/SP</p>
+            <p>Tel: (11) 5555-1234</p>
+        </div>
+    </footer>
+</body>
+
+</html>
